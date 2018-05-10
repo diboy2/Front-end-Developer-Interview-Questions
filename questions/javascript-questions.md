@@ -1,42 +1,95 @@
 # JS Questions:
 
 * Explain event delegation
+    Attaching event listeners to multiple elements - inefficient and memory-intensive
+    Instead, attach event listener to a parent container where your elements are nested.
 * Explain how `this` works in JavaScript
+    this refers to whatever executes the function and it is always read only.
+    global: window
+    object: object
+    function:
+
 * Explain how prototypal inheritance works
-* What do you think of AMD vs CommonJS?
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+    All functions contain prototypes.
+
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
+    undefined is a variable that is declared but does contain value.
+    null is an object that has a value of no value or falsy.
+    undeclared is a variable that was never declared in the code so it doesn't exist.
   * How would you go about checking for any of these states?
+    undeclared vs undefined - no way to check
+      - do typeof undefinedVariable === "undefined"
+      - nullVariable === null
 * What is a closure, and how/why would you use one?
+
 * Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+    forEach - performs operations on each array element
+    map - returns a new array that has contains transformed elements based on an operation
 * What's a typical use case for anonymous functions?
+    a function that is set to a variable.
+    when you want to re-use a function inside another function and is not needed anywhere else.
+
 * How do you organize your code? (module pattern, classical inheritance?)
+  module pattern
+    loosely coupled function and classes
+  classical inheritance
+    object-oriented
 * What's the difference between host objects and native objects?
+
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+
 * What's the difference between `.call` and `.apply`?
+
 * Explain `Function.prototype.bind`.
-* What's the difference between feature detection, feature inference, and using the UA string?
+
 * Explain Ajax in as much detail as possible.
+
 * What are the advantages and disadvantages of using Ajax?
+
 * Explain how JSONP works (and how it's not really Ajax).
+
 * Have you ever used JavaScript templating?
   * If so, what libraries have you used?
+    Handlebars
+      - use if-else statements to display html elements.
+      - use each statements to loop through data and display html elements
+      - contains scoping
+      - pass in objects
+    AngularJS templates
+      - can call scope functions
+      - declare scope models which will have two way binding in the html
 * Explain "hoisting".
+  javascript behavior where function declarations and variable declarations are moved to the top of the scope
 * Describe event bubbling.
+   behavior in which the order of events captured in nested elements.
 * What's the difference between an "attribute" and a "property"?
+   attribute vs property
 * Why is extending built-in JavaScript objects not a good idea?
 * Difference between document load event and document DOMContentLoaded event?
 * What is the difference between `==` and `===`?
-* Explain the same-origin policy with regards to JavaScript.
+  `==` check if they are equal in value
+  `===` check if they are equal in value and type
+  type coercion
+    true == 1
+      - true will convert to 1 and become true.
+    boolean == integer
+      - boolean will convert to integer
 * Make this work:
 ```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 * Why is it called a Ternary operator, what does the word "Ternary" indicate?
+  ternary - composed of three parts
+
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
+  use strict
+    - throws exceptions on common javascript errors
+    - cannot implicitly declare variables
+    - cannot assign to a read only variable
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+    -
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 * Explain what a single page app is and how to make one SEO-friendly.
 * What is the extent of your experience with Promises and/or their polyfills?
