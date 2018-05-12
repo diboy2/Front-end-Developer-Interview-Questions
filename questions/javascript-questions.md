@@ -89,11 +89,27 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
     -
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
-
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
 * Explain what a single page app is and how to make one SEO-friendly.
+  - Decrease load time and/or weight
+  - Increased chance of over complicating
+  - Services over page handling
+  - Deferred loading
+    - deferr the load time of an ajax process
 * What is the extent of your experience with Promises and/or their polyfills?
+  Promises are a way to
+  Promise.all
+    - resolves when all promises resolve or the first promise rejects
+  Promise.race
+    - resolves when one of the promises resolves or reject in a set of promises
+  Promise.finally
+    - same as catch or then
+  Promise.reject
+    - rejects a promise
+  Promise.resolve
+    - resolves a promise
 * What are the pros and cons of using Promises instead of callbacks?
+
 * What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
 * What tools and techniques do you use debugging JavaScript code?
 * What language constructions do you use for iterating over object properties and array items?
@@ -106,6 +122,9 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
   * What is the difference between call stack and task queue?
 * Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
 * What are the differences between variables created using `let`, `var` or `const`?
+  - let - declares a variable where you can change the value
+  - const - declares a variable where you can't change the value
+  - var - declares a variable
 * What are the differences between ES6 class and ES5 function constructors?
 * Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
 * What advantage is there for using the arrow syntax for a method in a constructor?
